@@ -113,7 +113,7 @@ section.main .content .slider .slides.active {
 
 section.main .content .slider .slides img {
   width: 100%;
-  max-width: 37.5rem;
+  max-width: auto;
 }
 
 section.main .footer {
@@ -178,11 +178,11 @@ section.main .footer .prevNext span.next {
   width: 3.125rem;
   height: 3.125rem;
   border: 0.125rem solid var(--white);
-  cursor:pointer;
+  cursor: pointer;
   font-size: 2rem;
   color: var(--white);
 }
 
-section.main .footer .prevNext span:nth-child(2){
+section.main .footer .prevNext span:nth-child(2) {
   margin-right: 1.25rem;
 }

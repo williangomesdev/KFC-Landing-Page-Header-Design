@@ -1,0 +1,142 @@
+@media screen and (max-width: 64rem) and (max-height: 37.5rem) {
+  section.main .content .text h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 61.875rem) {
+  section.main {
+    padding: 2.5rem;
+  }
+
+  section.main header {
+    padding: 1.25rem 2.5rem;
+  }
+
+  section.main header a img.logo {
+    max-width: 4.375rem;
+  }
+
+  section.main .content {
+    flex-direction: column;
+    margin: 7.5rem 0 2.5rem;
+  }
+
+  section.main .content .text {
+    max-width: 100%;
+  }
+
+  section.main .content .text h2 {
+    font-size: 4rem;
+  }
+
+  section.main .content .slider {
+    margin-top: 2.5rem;
+  }
+
+  section.main .content .slider .slides img {
+    max-width: 100%;
+  }
+
+  section.main header ul.navigation {
+    display: none;
+  }
+
+  section.main header ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  section.main header ul.navigation li {
+    font-size: 1.5rem;
+    margin: 0.625rem 0;
+    display: inline-block;
+  }
+
+  section.main header ul.navigation li a{
+      margin-left: 0;
+  }
+
+  section.main .footer {
+    position: relative;
+    padding: 0;
+  }
+  .toggle {
+    position: relative;
+    width: 2rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+  }
+
+  .toggle.active {
+    position: fixed;
+    right: 2.5rem;
+  }
+
+  .toggle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transform: translateY(-0.625rem);
+    box-shadow: 0 10px 0 #fff;
+    transition: 0.25s;
+  }
+
+  .toggle.active::before {
+    transform: translateY(0) rotate(45deg);
+    box-shadow: 0 0 0 #fff;
+  }
+
+  .toggle::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transform: translateY(0.625rem);
+    transition: 0.25s;
+  }
+
+  .toggle.active::after {
+    transform: translateY(0) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  section.main header {
+    padding: 1.25rem;
+  }
+
+  .toggle.active {
+    right: 1.25rem;
+  }
+
+  section.main .content .text h2 {
+    font-size: 3rem;
+  }
+
+  section.main .content .text .btn {
+    padding: 0.9375rem 1.875rem;
+  }
+
+  section.main .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  section.main .footer .sci {
+    margin-top: 2.5rem;
+  }
+}
