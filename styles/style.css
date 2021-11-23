@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+  --background: radial-gradient(#f0483a, #d10a20);
+  --white: #fff;
+}
+section.main {
+  position: relative;
+  min-height: 100vh;
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.875rem 6.25rem;
+}
+
+section.main header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 1.875rem 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+section.main header a img.logo {
+  max-width: 5.625rem;
+}
+
+section.main header ul.navigation {
+  display: flex;
+}
+
+section.main header ul.navigation li {
+  list-style: none;
+  color: #fff;
+}
+
+section.main header ul.navigation li a {
+  position: relative;
+  text-decoration: none;
+  margin-left: 2.5rem;
+}
+
+section.main .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.main .content .text {
+  width: 100%;
+  max-width: 37.5rem;
+}
+
+section.main .content .text h2 {
+  color: var(--white);
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+section.main .content .text h2 span {
+  font-weight: 700;
+}
+
+section.main .content .text p {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin: 1.25rem 0;
+}
+
+section.main .content .text .btn {
+  position: relative;
+  display: inline-block;
+  padding: 1.25rem 3.125rem;
+  background: var(--white);
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 2.5rem;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+section.main .content .text .btn:hover {
+  letter-spacing: 0.125rem;
+}
+
+section.main .content .slider {
+  position: relative;
+}
+
+section.main .content .slider .slides {
+  display: none;
+}
+
+section.main .content .slider .slides.active {
+  display: block;
+}
+
+section.main .content .slider .slides img {
+  width: 100%;
+  max-width: 37.5rem;
+}
+
+section.main .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1.875rem 6.25rem;
+}
+
+section.main .footer .sci {
+  display: flex;
+}
+
+section.main .footer .sci li {
+  list-style: none;
+}
+
+section.main .footer .sci li a {
+  color: var(--white);
+  font-size: 2rem;
+  margin-right: 1.25rem;
+  display: inline-block;
+  transition: 0.25s;
+}
+
+section.main .footer .sci li a:hover {
+  transform: translateY(-0.3125rem);
+}
+
+section.main .footer .prevNext {
+  position: relative;
+  user-select: none;
+}
+
+section.main .footer .prevNext p {
+  position: relative;
+  color: var(--white);
+  text-align: end;
+  margin-bottom: 0.9375rem;
+}
+
+section.main .footer .prevNext p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -3.125rem;
+  transform: translateY(-50%);
+  width: 3.125rem;
+  height: 0.125rem;
+  background: var(--white);
+}
+
+section.main .footer .prevNext span.prev,
+section.main .footer .prevNext span.next {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid var(--white);
+  cursor:pointer;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+section.main .footer .prevNext span:nth-child(2){
+  margin-right: 1.25rem;
+}
